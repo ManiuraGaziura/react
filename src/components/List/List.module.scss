@@ -1,0 +1,68 @@
+@import '../../styles/settings.scss';
+
+.list {
+  padding-bottom: $base-size;
+}
+
+.header {
+  position: relative;
+  min-height: ($base-size * 15);
+  margin: 0 0 ($base-size * 3) 0;
+  overflow: hidden;
+  border-radius: $radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at 72% 22%, rgba(255, 255, 255, 0.18) 0 7px, transparent 8px),
+    radial-gradient(circle at 84% 72%, rgba(32, 40, 95, 0.35) 0 7px, transparent 8px),
+    radial-gradient(circle at 48% 4%, rgba(32, 40, 95, 0.35) 0 12px, transparent 13px),
+    linear-gradient(135deg, #6c63ff, #6254f2);
+
+  &::before {
+    content: '🚀';
+    position: absolute;
+    left: 22%;
+    bottom: 22%;
+    font-size: ($base-size * 4);
+    transform: rotate(-25deg);
+  }
+
+  &::after {
+    content: '✦  ·  ✧        ·  ✦';
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    bottom: 10%;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: ($base-size * 2);
+    white-space: nowrap;
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: ($base-size * 2.5);
+  text-transform: uppercase;
+  color: $color-light;
+
+  span {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -$base-size;
+  }
+}
+
+.description {
+  margin: 0 0 36px;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
