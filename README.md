@@ -1,0 +1,1 @@
+zaszla pomylka i napisalem 10.5 zamiast 11.5 podczas commitowania
