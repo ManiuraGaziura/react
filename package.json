@@ -11,7 +11,8 @@
     "redux": "4.2.1",
     "redux-devtools-extension": "2.13.9",
     "sass": "^1.69.0",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "react-router-dom": "6.15.0"
   },
   "scripts": {
     "start": "react-scripts start",

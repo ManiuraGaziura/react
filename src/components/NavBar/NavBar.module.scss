@@ -1,0 +1,41 @@
+@import '../../styles/settings.scss';
+
+.navbar {
+  padding: $base-size 0;
+  background: darken($color-dark, 3%);
+
+  > div {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  color: $color-light;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li + li {
+    margin-left: ($base-size * 2);
+  }
+
+  a {
+    color: $color-light;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
