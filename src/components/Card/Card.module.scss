@@ -14,8 +14,14 @@
   font-weight: bold;
 }
 
-.favoriteButton {
+.actions {
+  display: flex;
+  align-items: center;
+  gap: $base-size * 0.75;
   flex-shrink: 0;
+}
+
+.actionButton {
   border: 0;
   padding: 0;
   background: transparent;
