@@ -1,0 +1,28 @@
+@use 'sass:math';
+@import '../../styles/settings.scss';
+
+.listForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $base-size;
+  margin-top: $base-size * 2;
+  padding: 10px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: math.div($base-size, 2);
+}
+
+@media (max-width: 767px) {
+  .listForm {
+    flex-direction: column;
+  }
+
+  .field {
+    width: 100%;
+    justify-content: center;
+  }
+}
