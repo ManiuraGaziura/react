@@ -9,5 +9,27 @@
   border-radius: $radius;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: $base-size;
   font-weight: bold;
+}
+
+.favoriteButton {
+  flex-shrink: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: lighten($color-dark, 45%);
+  font-size: ($base-size * 1.25);
+  line-height: 1;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    color: $color-warning;
+  }
+}
+
+.isFavorite {
+  color: $color-warning;
 }
